@@ -5,7 +5,7 @@ import GamePage from "./components/GamePage";
 function App() {
   const [gameWord, setGameWord] = useState("");
 
-  return <div className="App">{gameWord ? <GamePage gameWord={gameWord} /> : <StartPage onStart={setGameWord} />}</div>;
+  return <div className="App">{gameWord ? <GamePage gameWord={gameWord} setGameWord={setGameWord} /> : <StartPage onStart={setGameWord} />}</div>;
 }
 
 export default App;
