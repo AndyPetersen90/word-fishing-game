@@ -24,8 +24,8 @@ function PondScene({ percentage, correctGuess }: PondSceneProps) {
         }}
       >
         {/* Fish with Wiggle Animation */}
-        <div className="absolute top-[13vh] left-[9vw] w-[80%] h-[60%]">
-          <div className="absolute top-[9vh] transition-transform duration-5500" style={{ transform: `translateX(${(percentage / 100) * 82}vw)` }}>
+        <div className="absolute top-[13vh] left-[12vw] w-[75%] h-[60%]">
+          <div className="absolute top-[9vh] transition-transform duration-6000" style={{ transform: `translateX(${(percentage / 100) * 68}vw)` }}>
             <img src={fishShadow} alt="Fish" className="shadow-fish w-25 h-18 opacity-55 fish-wiggle" />
           </div>
         </div>
@@ -50,10 +50,12 @@ function PondScene({ percentage, correctGuess }: PondSceneProps) {
 
       {/* Pond Decor */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <img src={lilyPad} alt="Lily Pad" className="w-[3.5vw] h-[3vh] absolute left-[20vw] bottom-[16vh]" />
-        <img src={lilyPad} alt="Lily Pad" className="w-[3.5vw] h-[3vh] absolute left-[28vw] bottom-[42vh]" />
-        <img src={lilyPad} alt="Lily Pad" className="w-[3.5vw] h-[3vh] absolute left-[55vw] bottom-[16vh]" />
-        <img src={lilyPad} alt="Lily Pad" className="w-[3.5vw] h-[3vh] absolute left-[75vw] bottom-[40vh]" />
+        <img src={lilyPad} alt="Lily Pad" className="w-[3vw] h-[3vh] absolute left-[20vw] bottom-[16vh]" />
+        {/* <img src={lilyPad} alt="Lily Pad" className="w-[2.25vw] h-[3vh] absolute left-[22vw] bottom-[16vh] rotate-225" />
+        <img src={lilyPad} alt="Lily Pad" className="w-[2.25vw] h-[3vh] absolute left-[19vw] bottom-[14vh] rotate-225" /> */}
+        <img src={lilyPad} alt="Lily Pad" className="w-[3vw] h-[3vh] absolute left-[28vw] bottom-[42vh]" />
+        <img src={lilyPad} alt="Lily Pad" className="w-[3vw] h-[3vh] absolute left-[55vw] bottom-[16vh]" />
+        <img src={lilyPad} alt="Lily Pad" className="w-[3vw] h-[3vh] absolute left-[75vw] bottom-[40vh]" />
       </div>
     </div>
   );
