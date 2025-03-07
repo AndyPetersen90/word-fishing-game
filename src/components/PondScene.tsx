@@ -26,7 +26,7 @@ function PondScene({ percentage, correctGuess }: PondSceneProps) {
         {/* Fish with Wiggle Animation */}
         <div className="absolute top-[13vh] left-[12vw] w-[75%] h-[60%]">
           <div className="absolute top-[9vh] transition-transform duration-6000" style={{ transform: `translateX(${(percentage / 100) * 68}vw)` }}>
-            <img src={fishShadow} alt="Fish" className="shadow-fish w-25 h-18 opacity-55 fish-wiggle" />
+            <img src={fishShadow} alt="Fish" className="shadow-fish w-[22%] opacity-55 fish-wiggle" />
           </div>
         </div>
       </div>
