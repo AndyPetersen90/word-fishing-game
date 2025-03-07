@@ -75,7 +75,7 @@ function GamePage({ gameWord, setGameWord }: GamePageProps) {
         ))}
       </div>
 
-      <div className="grid grid-cols-6 gap-2 mb-4">
+      <div className="grid grid-cols-9 gap-2 mb-4">
         {alphabet.map((letter) => (
           <button
             key={letter}

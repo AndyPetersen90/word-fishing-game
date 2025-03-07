@@ -61,7 +61,7 @@
     transform: translateX(-5px) rotate(10deg);
   }
   50% {
-    transform: translateX(0) rotate(0deg) translateY(12vh);
+    transform: translateX(0) rotate(0deg) translateY(18vh);
   }
   100% {
     transform: translateX(-5px) rotate(10deg);
